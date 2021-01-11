@@ -32,13 +32,12 @@ dynamicSearch = () => {
   const newStateSongs = this.state.songs.filter((elem)=>{
     return elem.title.includes(this.state.searchTerm.toLowerCase());
   });
-  return (newStateSongs) ? this.setState({songs: newStateSongs}): <PageNotFoundHandle/>
+  this.setState({songs: newStateSongs});
 }
 
 componentDidMount(){
       const urlAlbums ='https://jsonplaceholder.typicode.com/albums';
       const urlCovers ='https://jsonplaceholder.typicode.com/photos';
-      var albumsData;
       const localStorageData = JSON.parse(localStorage.getItem("SongsArray"));
       if(!localStorageData){
         fetch(urlAlbums)
