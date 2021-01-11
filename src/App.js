@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import React, {Component} from 'react';
+import React from 'react';
 import MusicPlayer from './Components/MusicPlayer';
 import Footer from './Components/Footer';
 import MusicContainer from './containers/MusicContainer';

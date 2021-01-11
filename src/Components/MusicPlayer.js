@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MusicPlayer = ({cuurentSong}) => {
+const MusicPlayer = () => {
     return (
         <div>
             <center><h1>Play Your Song here.</h1>

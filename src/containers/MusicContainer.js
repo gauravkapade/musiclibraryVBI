@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import { MDBCol, MDBIcon } from "mdbreact";
 import ChartList from '../Components/ChartList.js'
 import '../public/style.css';
-import PageNotFoundHandle from '../Components/PageNotFoundHandle.js';
 
 class MusicContainer extends Component {
   constructor(props) {
