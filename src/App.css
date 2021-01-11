@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+.overflow-scrolling {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#musiclistDiv{
+  margin: 5px 5px 5px 5px;
+}
+#playerDiv{
+  color: aliceblue;
+  display: flex;
+  margin: 5px 5px 5px 5px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.rowForm {
+  display:flex;
+  flex-direction:row;
+}
+
+.left{
+  float: left;
+  height: 90%;
+  background-color: #282c34;
+  width: 50%;
+}
+
+.audioStyles{
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.App-header {
+  background-color: #282c34;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vh;
+  margin: 5px 5px 5px 5px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
