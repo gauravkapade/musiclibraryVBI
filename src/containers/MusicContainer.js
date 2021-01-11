@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { MDBCol, MDBIcon, MDBBtn } from "mdbreact";
+import { MDBCol, MDBIcon } from "mdbreact";
 import ChartList from '../Components/ChartList.js'
 import '../public/style.css';
 import PageNotFoundHandle from '../Components/PageNotFoundHandle.js';
@@ -18,7 +18,7 @@ showAllSongs = () => {
 }
 
 editSearchTerm = (e) => {
-  if(e.target.value == ''){
+  if(e.target.value === ''){
     this.setState({
       songs: JSON.parse(localStorage.getItem("SongsArray")),
       searchTerm: e.target.value})
@@ -47,8 +47,6 @@ componentDidMount(){
           return result.json();
         })
         .then(data => {
-
-          albumsData = data;
           return fetch(urlCovers)
               .then(result => {
                     if(result.ok)
